@@ -2,14 +2,17 @@ extends Node2D
 
 var board_size: int = 32
 var tile_size: int = 50
+var pieces: Array[Piece]
+
 
 #func _enter_tree() -> void:
 	#var board = board_scene.instantiate()
 	#add_child(board)
 
-#func _ready() -> void:
-	#var board = board_scene.instantiate()
-	#add_child(board)
+func _ready() -> void:
+	#TODO: make call to server for pieces
+	
+	pieces.append(Pawn
 
 #func _draw():
 	#var row_index := board_size
